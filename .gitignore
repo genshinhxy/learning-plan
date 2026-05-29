@@ -4,6 +4,10 @@ repos/
 models/
 *.pdf
 
+# 向量库 / 索引产物
+chroma_db/
+storage/
+
 # 密钥与环境
 .env
 *.key
