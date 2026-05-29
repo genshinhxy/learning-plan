@@ -1,0 +1,56 @@
+{
+  "name": "Claude API 基础评估",
+  "version": "1.0",
+  "test_cases": [
+    {
+      "id": "basic-001",
+      "category": "基本问答",
+      "input": "什么是 Python？",
+      "expected_keywords": ["编程语言", "Python", "解释型"],
+      "description": "测试基本的问答能力"
+    },
+    {
+      "id": "basic-002",
+      "category": "基本问答",
+      "input": "解释一下什么是 RESTful API",
+      "expected_keywords": ["HTTP", "REST", "API", "资源"],
+      "description": "测试技术概念解释能力"
+    },
+    {
+      "id": "code-001",
+      "category": "代码生成",
+      "input": "写一个 Python 函数，判断一个数是否是素数",
+      "expected_keywords": ["def", "return", "for", "range"],
+      "description": "测试代码生成能力"
+    },
+    {
+      "id": "code-002",
+      "category": "代码生成",
+      "input": "用 Python 实现一个简单的栈数据结构",
+      "expected_keywords": ["class", "def", "push", "pop", "append"],
+      "description": "测试面向对象代码生成"
+    },
+    {
+      "id": "reason-001",
+      "category": "逻辑推理",
+      "input": "如果今天是星期三，那么100天后是星期几？",
+      "expected_keywords": ["星期", "余数"],
+      "description": "测试逻辑推理能力"
+    },
+    {
+      "id": "context-001",
+      "category": "上下文理解",
+      "input": "我有一个列表 [3, 1, 4, 1, 5, 9, 2, 6]，帮我排序并去重",
+      "expected_keywords": ["sorted", "set", "1, 2, 3, 4, 5, 6, 9"],
+      "description": "测试上下文理解和代码生成"
+    },
+    {
+      "id": "creative-001",
+      "category": "创意写作",
+      "input": "用一句话描述人工智能的本质",
+      "expected_keywords": [],
+      "description": "测试创意表达能力，需要人工评估",
+      "needs_human_eval": true
+    }
+  ]
+}

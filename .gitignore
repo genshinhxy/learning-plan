@@ -1,0 +1,28 @@
+# 大文件 / 第三方内容（不进 git，避免体积膨胀和版权问题）
+papers/
+repos/
+models/
+*.pdf
+
+# 密钥与环境
+.env
+*.key
+*token*
+*secret*
+*credential*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
